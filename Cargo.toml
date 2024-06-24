@@ -3,33 +3,37 @@
 resolver = "2"
 
 members = [
-    "crates/sovereign/sovereign-chain-components",
-    "crates/sovereign/sovereign-rollup-components",
-    "crates/sovereign/sovereign-relayer",
-    "crates/sovereign/sovereign-test-components",
-    "crates/sovereign/sovereign-integration-tests",
+  "crates/sovereign/sovereign-chain-components",
+  "crates/sovereign/sovereign-rollup-components",
+  "crates/sovereign/sovereign-relayer",
+  "crates/sovereign/sovereign-test-components",
+  "crates/sovereign/sovereign-integration-tests",
 ]
 
 [workspace.package]
-version         = "0.1.0"
-edition         = "2021"
-license         = "Apache-2.0"
-keywords        = ["blockchain", "consensus", "cosmos", "ibc", "tendermint"]
-repository      = "https://github.com/informalsystems/hermes-sdk"
-authors         = ["Informal Systems <hello@informal.systems>"]
-rust-version    = "1.79"
+
+authors      = ["Informal Systems <hello@informal.systems>"]
+edition      = "2021"
+keywords     = ["blockchain", "consensus", "cosmos", "ibc", "tendermint"]
+license      = "Apache-2.0"
+repository   = "https://github.com/informalsystems/hermes-sdk"
+rust-version = "1.79"
+version      = "0.1.0"
+
+[profile.release]
+overflow-checks = true
 
 [workspace.dependencies]
 
-hermes-runtime-components       = { version = "0.1.0" }
 hermes-async-runtime-components = { version = "0.1.0" }
-hermes-tokio-runtime-components = { version = "0.1.0" }
 hermes-runtime                  = { version = "0.1.0" }
+hermes-runtime-components       = { version = "0.1.0" }
+hermes-tokio-runtime-components = { version = "0.1.0" }
 
 hermes-encoding-components          = { version = "0.1.0" }
 hermes-protobuf-encoding-components = { version = "0.1.0" }
 
-hermes-logging-components = { version = "0.1.0" }
+hermes-logging-components         = { version = "0.1.0" }
 hermes-tracing-logging-components = { version = "0.1.0" }
 
 hermes-relayer-components       = { version = "0.1.0" }
@@ -38,70 +42,67 @@ hermes-relayer-components-extra = { version = "0.1.0" }
 hermes-test-components = { version = "0.1.0" }
 
 hermes-cosmos-chain-components  = { version = "0.1.0" }
+hermes-cosmos-integration-tests = { version = "0.1.0" }
 hermes-cosmos-relayer           = { version = "0.1.0" }
 hermes-cosmos-test-components   = { version = "0.1.0" }
-hermes-cosmos-integration-tests = { version = "0.1.0" }
 
 hermes-wasm-client-components = { version = "0.1.0" }
 hermes-wasm-test-components   = { version = "0.1.0" }
 
 hermes-celestia-chain             = { version = "0.1.0" }
-hermes-celestia-test-components   = { version = "0.1.0" }
 hermes-celestia-integration-tests = { version = "0.1.0" }
+hermes-celestia-test-components   = { version = "0.1.0" }
 
 hermes-sovereign-chain-components  = { version = "0.1.0" }
-hermes-sovereign-rollup-components = { version = "0.1.0" }
-hermes-sovereign-relayer           = { version = "0.1.0" }
-hermes-sovereign-test-components   = { version = "0.1.0" }
 hermes-sovereign-integration-tests = { version = "0.1.0" }
+hermes-sovereign-relayer           = { version = "0.1.0" }
+hermes-sovereign-rollup-components = { version = "0.1.0" }
+hermes-sovereign-test-components   = { version = "0.1.0" }
 
-ibc                             = { version = "0.53.0" }
-ibc-query                       = { version = "0.53.0" }
-ibc-proto                       = { version = "0.44.0" }
-sov-celestia-client             = { version = "0.1.0" }
-ibc-relayer                     = { version = "0.27.3" }
-ibc-relayer-types               = { version = "0.27.3" }
-cgp-core                        = { version = "0.1.0" }
-cgp-error-eyre                  = { version = "0.1.0" }
-prost                           = { version = "0.12.3" }
-prost-types                     = { version = "0.12.3" }
-serde                           = { version = "1.0.203" }
-serde_derive                    = { version = "1.0" }
-serde_json                      = { version = "1.0" }
-tokio                           = { version = "1.36" }
-tracing                         = { version = "0.1.40" }
-tracing-subscriber              = { version = "0.3.18" }
-tonic                           = { version = "0.11" }
-toml                            = { version = "0.8.12" }
-futures                         = { version = "0.3.30", default-features = false }
-eyre                            = { version = "0.6.12" }
-itertools                       = { version = "0.12" }
-jsonrpsee                       = { version = "0.21.0", default-features = false }
-borsh                           = { version = "0.10.3" }
-rand                            = { version = "0.8.5" }
-bech32                          = { version = "0.9.1" }
-ed25519-dalek                   = { version = "2.1.1" }
-sha2                            = { version = "0.10.8" }
-jmt                             = { version = "0.9.0" }
-
-[profile.release]
-overflow-checks = true
+bech32              = { version = "0.9.1" }
+borsh               = { version = "0.10.3" }
+cgp-core            = { version = "0.1.0" }
+cgp-error-eyre      = { version = "0.1.0" }
+ed25519-dalek       = { version = "2.1.1" }
+eyre                = { version = "0.6.12" }
+futures             = { version = "0.3.30", default-features = false }
+ibc                 = { version = "0.53.0" }
+ibc-proto           = { version = "0.44.0" }
+ibc-query           = { version = "0.53.0" }
+ibc-relayer         = { version = "0.27.3" }
+ibc-relayer-types   = { version = "0.27.3" }
+itertools           = { version = "0.12" }
+jmt                 = { version = "0.9.0" }
+jsonrpsee           = { version = "0.21.0", default-features = false }
+prost               = { version = "0.12.3" }
+prost-types         = { version = "0.12.3" }
+rand                = { version = "0.8.5" }
+serde               = { version = "1.0.203" }
+serde_derive        = { version = "1.0" }
+serde_json          = { version = "1.0" }
+sha2                = { version = "0.10.8" }
+sov-celestia-client = { version = "0.1.0" }
+tokio               = { version = "1.36" }
+toml                = { version = "0.8.12" }
+tonic               = { version = "0.11" }
+tracing             = { version = "0.1.40" }
+tracing-subscriber  = { version = "0.3.18" }
 
 [patch.crates-io]
 
-hermes-sovereign-chain-components   = { path = "./crates/sovereign/sovereign-chain-components" }
-hermes-sovereign-rollup-components  = { path = "./crates/sovereign/sovereign-rollup-components" }
-hermes-sovereign-relayer            = { path = "./crates/sovereign/sovereign-relayer" }
-hermes-sovereign-test-components    = { path = "./crates/sovereign/sovereign-test-components" }
-hermes-sovereign-integration-tests  = { path = "./crates/sovereign/sovereign-integration-tests" }
+hermes-sovereign-chain-components  = { path = "./crates/sovereign/sovereign-chain-components" }
+hermes-sovereign-integration-tests = { path = "./crates/sovereign/sovereign-integration-tests" }
+hermes-sovereign-relayer           = { path = "./crates/sovereign/sovereign-relayer" }
+hermes-sovereign-rollup-components = { path = "./crates/sovereign/sovereign-rollup-components" }
+hermes-sovereign-test-components   = { path = "./crates/sovereign/sovereign-test-components" }
 
 hermes-relayer-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-relayer-components-extra = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
-hermes-runtime-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-async-runtime-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-tokio-runtime-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-runtime                  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-runtime-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-tokio-runtime-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-encoding-components          = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-protobuf-encoding-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
@@ -109,47 +110,47 @@ hermes-protobuf-encoding-components = { git = "https://github.com/informalsystem
 hermes-logging-components         = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-tracing-logging-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
-hermes-test-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-ibc-test-suite  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-test-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-cli-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-cosmos-chain-components  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-cosmos-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-cosmos-relayer           = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-cosmos-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-celestia-chain             = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-celestia-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-celestia-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-celestia-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-wasm-client-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-wasm-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
-cgp-core                = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-component           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-component-macro     = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-error               = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-error-eyre          = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-async               = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-async-macro         = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-run                 = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-inner               = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-async           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-async-macro     = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-component       = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-component-macro = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-core            = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-error           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-error-eyre      = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-inner           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-run             = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
 
-ibc                         = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-core                    = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-core-client             = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-core-host-cosmos        = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-client-tendermint       = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-client-wasm-types       = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-app-transfer            = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-primitives              = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-query                   = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
-ibc-derive                  = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc                   = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-app-transfer      = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-client-tendermint = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-client-wasm-types = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-core              = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-core-client       = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-core-host-cosmos  = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-derive            = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-primitives        = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
+ibc-query             = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
 
-sov-celestia-client         = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
-sov-celestia-client-types   = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
+sov-celestia-client       = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
+sov-celestia-client-types = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
 
-ibc-relayer             = { git = "https://github.com/informalsystems/hermes.git" }
-ibc-telemetry           = { git = "https://github.com/informalsystems/hermes.git" }
-ibc-relayer-types       = { git = "https://github.com/informalsystems/hermes.git" }
+ibc-relayer       = { git = "https://github.com/informalsystems/hermes.git" }
+ibc-relayer-types = { git = "https://github.com/informalsystems/hermes.git" }
+ibc-telemetry     = { git = "https://github.com/informalsystems/hermes.git" }
