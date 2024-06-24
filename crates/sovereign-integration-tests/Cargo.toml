@@ -42,13 +42,12 @@ sov-celestia-client = { workspace = true, features = ["test-util"] }
 borsh              = { workspace = true }
 eyre               = { workspace = true }
 futures            = { workspace = true }
-hex                = { version = "0.4.3" }
+hex                = { workspace = true }
 jsonrpsee          = { workspace = true, features = ["http-client", "ws-client"] }
 rand               = { workspace = true }
 serde              = { workspace = true }
 serde_json         = { workspace = true }
 sha2               = { workspace = true }
-stable-eyre        = { version = "0.2.2" }
 tokio              = { workspace = true }
 toml               = { workspace = true }
 tracing            = { workspace = true }

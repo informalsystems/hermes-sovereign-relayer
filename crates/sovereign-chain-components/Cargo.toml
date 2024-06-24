@@ -24,24 +24,22 @@ hermes-runtime-components           = { workspace = true }
 hermes-sovereign-rollup-components  = { workspace = true }
 hermes-wasm-client-components       = { workspace = true }
 
-ibc                 = { workspace = true }
-ibc-proto           = { workspace = true }
-ibc-query           = { workspace = true }
-ibc-relayer         = { workspace = true }
-ibc-relayer-types   = { workspace = true }
+ibc               = { workspace = true }
+ibc-proto         = { workspace = true }
+ibc-query         = { workspace = true }
+ibc-relayer       = { workspace = true }
+ibc-relayer-types = { workspace = true }
+
 sov-celestia-client = { workspace = true, features = ["test-util"] }
 
-base64          = { version = "0.22.1" }
-bech32          = { workspace = true }
-borsh           = { workspace = true }
-ed25519-dalek   = { version = "2.1.1" }
-eyre            = { workspace = true }
-hex             = { version = "0.4.3" }
-jsonrpsee       = { workspace = true, features = ["http-client"] }
-prost           = { workspace = true }
-serde           = { workspace = true }
-serde-json-wasm = { version = "1.0.1" }
-serde_json      = { workspace = true }
-sha2            = { workspace = true }
-tokio           = { workspace = true }
-tonic           = { workspace = true }
+bech32        = { workspace = true }
+borsh         = { workspace = true }
+ed25519-dalek = { workspace = true }
+eyre          = { workspace = true }
+hex           = { workspace = true }
+jsonrpsee     = { workspace = true, features = ["http-client"] }
+prost         = { workspace = true }
+serde         = { workspace = true }
+serde_json    = { workspace = true }
+sha2          = { workspace = true }
+tonic         = { workspace = true }

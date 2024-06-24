@@ -28,18 +28,16 @@ ibc-relayer         = { workspace = true }
 ibc-relayer-types   = { workspace = true }
 sov-celestia-client = { workspace = true, features = ["test-util"] }
 
-base64          = { version = "0.22.1" }
-bech32          = { workspace = true }
-borsh           = { workspace = true }
-ed25519-dalek   = { workspace = true }
-eyre            = { workspace = true }
-futures         = { workspace = true }
-hex             = { version = "0.4.3" }
-jmt             = { workspace = true }
-jsonrpsee       = { workspace = true, features = ["http-client"] }
-prost           = { workspace = true }
-serde           = { workspace = true }
-serde-json-wasm = { version = "1.0.1" }
-serde_json      = { workspace = true }
-sha2            = { workspace = true }
-tokio           = { workspace = true }
+bech32        = { workspace = true }
+borsh         = { workspace = true }
+ed25519-dalek = { workspace = true }
+eyre          = { workspace = true }
+futures       = { workspace = true }
+hex           = { workspace = true }
+jmt           = { workspace = true }
+jsonrpsee     = { workspace = true, features = ["http-client"] }
+prost         = { workspace = true }
+serde         = { workspace = true }
+serde_json    = { workspace = true }
+sha2          = { workspace = true }
+tokio         = { workspace = true }
