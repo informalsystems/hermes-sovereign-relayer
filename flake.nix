@@ -38,12 +38,8 @@
       cosmos-nix-wasm = inputs.cosmos-nix-wasm.packages.${system};
       sovereign-nix = inputs.sovereign-nix.packages.${system};
       sovereign-ibc-nix = inputs.sovereign-ibc-nix.packages.${system};
-
-      rust-bin = nixpkgs.rust-bin.fromRustupToolchainFile ./nix/wasm-rust-toolchain.toml;
     in {
       packages = {
-        inherit tendermint-wasm-client;
-
         inherit
           (cosmos-nix)
           ibc-go-v7-simapp
