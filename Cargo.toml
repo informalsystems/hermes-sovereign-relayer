@@ -20,51 +20,6 @@ authors         = ["Informal Systems <hello@informal.systems>"]
 rust-version    = "1.79"
 
 [workspace.dependencies]
-async-trait                     = { version = "0.1.80" }
-ibc                             = { version = "0.53.0" }
-ibc-query                       = { version = "0.53.0" }
-ibc-proto                       = { version = "0.44.0" }
-sov-celestia-client             = { version = "0.1.0" }
-ibc-relayer                     = { version = "0.27.3" }
-ibc-relayer-types               = { version = "0.27.3" }
-ibc-telemetry                   = { version = "0.27.3" }
-tendermint                      = { version = "0.36" }
-tendermint-proto                = { version = "0.36" }
-tendermint-rpc                  = { version = "0.36" }
-tendermint-testgen              = { version = "0.36" }
-basecoin                        = { version = "0.1.0" }
-cgp-core                        = { version = "0.1.0" }
-cgp-error-eyre                  = { version = "0.1.0" }
-clap                            = { version = "4.5.3" }
-oneline-eyre                    = { version = "0.1.0" }
-prost                           = { version = "0.12.3" }
-prost-types                     = { version = "0.12.3" }
-serde                           = { version = "1.0.203" }
-serde_derive                    = { version = "1.0" }
-serde_json                      = { version = "1.0" }
-tokio                           = { version = "1.36" }
-tracing                         = { version = "0.1.40" }
-tracing-subscriber              = { version = "0.3.18" }
-tonic                           = { version = "0.11" }
-toml                            = { version = "0.8.12" }
-futures                         = { version = "0.3.30", default-features = false }
-futures-core                    = { version = "0.3.30", default-features = false }
-futures-util                    = { version = "0.3.30", default-features = false }
-futures-channel                 = { version = "0.3.30", default-features = false }
-eyre                            = { version = "0.6.12" }
-itertools                       = { version = "0.12" }
-http                            = { version = "0.2.11" }
-humantime                       = { version = "2.1.0" }
-flex-error                      = { version = "0.4.4", default-features = false }
-jsonrpsee                       = { version = "0.21.0", default-features = false }
-hdpath                          = { version = "0.6.3" }
-borsh                           = { version = "0.10.3" }
-rand                            = { version = "0.8.5" }
-bech32                          = { version = "0.9.1" }
-ed25519-dalek                   = { version = "2.1.1" }
-sha2                            = { version = "0.10.8" }
-ics23                           = { version = "0.11.1" }
-jmt                             = { version = "0.9.0" }
 
 hermes-runtime-components       = { version = "0.1.0" }
 hermes-async-runtime-components = { version = "0.1.0" }
@@ -99,6 +54,35 @@ hermes-sovereign-rollup-components = { version = "0.1.0" }
 hermes-sovereign-relayer           = { version = "0.1.0" }
 hermes-sovereign-test-components   = { version = "0.1.0" }
 hermes-sovereign-integration-tests = { version = "0.1.0" }
+
+ibc                             = { version = "0.53.0" }
+ibc-query                       = { version = "0.53.0" }
+ibc-proto                       = { version = "0.44.0" }
+sov-celestia-client             = { version = "0.1.0" }
+ibc-relayer                     = { version = "0.27.3" }
+ibc-relayer-types               = { version = "0.27.3" }
+cgp-core                        = { version = "0.1.0" }
+cgp-error-eyre                  = { version = "0.1.0" }
+prost                           = { version = "0.12.3" }
+prost-types                     = { version = "0.12.3" }
+serde                           = { version = "1.0.203" }
+serde_derive                    = { version = "1.0" }
+serde_json                      = { version = "1.0" }
+tokio                           = { version = "1.36" }
+tracing                         = { version = "0.1.40" }
+tracing-subscriber              = { version = "0.3.18" }
+tonic                           = { version = "0.11" }
+toml                            = { version = "0.8.12" }
+futures                         = { version = "0.3.30", default-features = false }
+eyre                            = { version = "0.6.12" }
+itertools                       = { version = "0.12" }
+jsonrpsee                       = { version = "0.21.0", default-features = false }
+borsh                           = { version = "0.10.3" }
+rand                            = { version = "0.8.5" }
+bech32                          = { version = "0.9.1" }
+ed25519-dalek                   = { version = "2.1.1" }
+sha2                            = { version = "0.10.8" }
+jmt                             = { version = "0.9.0" }
 
 [profile.release]
 overflow-checks = true
