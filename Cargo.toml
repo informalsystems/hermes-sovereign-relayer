@@ -3,11 +3,11 @@
 resolver = "2"
 
 members = [
-  "crates/sovereign/sovereign-chain-components",
-  "crates/sovereign/sovereign-rollup-components",
-  "crates/sovereign/sovereign-relayer",
-  "crates/sovereign/sovereign-test-components",
-  "crates/sovereign/sovereign-integration-tests",
+  "crates/sovereign-chain-components",
+  "crates/sovereign-rollup-components",
+  "crates/sovereign-relayer",
+  "crates/sovereign-test-components",
+  "crates/sovereign-integration-tests",
 ]
 
 [workspace.package]
@@ -90,11 +90,11 @@ tracing-subscriber  = { version = "0.3.18" }
 
 [patch.crates-io]
 
-hermes-sovereign-chain-components  = { path = "./crates/sovereign/sovereign-chain-components" }
-hermes-sovereign-integration-tests = { path = "./crates/sovereign/sovereign-integration-tests" }
-hermes-sovereign-relayer           = { path = "./crates/sovereign/sovereign-relayer" }
-hermes-sovereign-rollup-components = { path = "./crates/sovereign/sovereign-rollup-components" }
-hermes-sovereign-test-components   = { path = "./crates/sovereign/sovereign-test-components" }
+hermes-sovereign-chain-components  = { path = "./crates/sovereign-chain-components" }
+hermes-sovereign-integration-tests = { path = "./crates/sovereign-integration-tests" }
+hermes-sovereign-relayer           = { path = "./crates/sovereign-relayer" }
+hermes-sovereign-rollup-components = { path = "./crates/sovereign-rollup-components" }
+hermes-sovereign-test-components   = { path = "./crates/sovereign-test-components" }
 
 hermes-relayer-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-relayer-components-extra = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
