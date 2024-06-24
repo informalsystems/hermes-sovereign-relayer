@@ -99,47 +99,39 @@ hermes-sovereign-relayer           = { path = "./crates/sovereign-relayer" }
 hermes-sovereign-rollup-components = { path = "./crates/sovereign-rollup-components" }
 hermes-sovereign-test-components   = { path = "./crates/sovereign-test-components" }
 
-hermes-relayer-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-relayer-components-extra = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-async-runtime-components     = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-celestia-chain               = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-celestia-integration-tests   = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-celestia-test-components     = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cli-components               = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cosmos-chain-components      = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cosmos-integration-tests     = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cosmos-relayer               = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cosmos-test-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-cosmos-wasm-relayer          = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-encoding-components          = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-ibc-test-suite               = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-logging-components           = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-protobuf-encoding-components = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-relayer-components           = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-relayer-components-extra     = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-runtime                      = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-runtime-components           = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-test-components              = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-tokio-runtime-components     = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-tracing-logging-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-wasm-client-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
+hermes-wasm-test-components         = { git = "https://github.com/informalsystems/hermes-sdk.git", rev = "d330d914" }
 
-hermes-async-runtime-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-runtime                  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-runtime-components       = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-tokio-runtime-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-encoding-components          = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-protobuf-encoding-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-logging-components         = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-tracing-logging-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-ibc-test-suite  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-test-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-cli-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-cosmos-chain-components  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-relayer           = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-wasm-relayer      = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-celestia-chain             = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-celestia-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-celestia-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-hermes-wasm-client-components = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-wasm-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-
-cgp-async           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-async-macro     = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-component       = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-component-macro = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-core            = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-error           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-error-eyre      = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-inner           = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
-cgp-run             = { git = "https://github.com/informalsystems/cgp.git", branch = "main" }
+cgp-async           = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-async-macro     = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-component       = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-component-macro = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-core            = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-error           = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-error-eyre      = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-inner           = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
+cgp-run             = { git = "https://github.com/informalsystems/cgp.git", rev = "9c323af0" }
 
 ibc                   = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
 ibc-app-transfer      = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
@@ -152,9 +144,9 @@ ibc-derive            = { git = "https://github.com/cosmos/ibc-rs.git", rev = "6
 ibc-primitives        = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
 ibc-query             = { git = "https://github.com/cosmos/ibc-rs.git", rev = "67841b3c" }
 
-sov-celestia-client       = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
-sov-celestia-client-types = { git = "https://github.com/informalsystems/sovereign-ibc.git" }
+sov-celestia-client       = { git = "https://github.com/informalsystems/sovereign-ibc.git", rev = "90591e58" }
+sov-celestia-client-types = { git = "https://github.com/informalsystems/sovereign-ibc.git", rev = "90591e58" }
 
-ibc-relayer       = { git = "https://github.com/informalsystems/hermes.git" }
-ibc-relayer-types = { git = "https://github.com/informalsystems/hermes.git" }
-ibc-telemetry     = { git = "https://github.com/informalsystems/hermes.git" }
+ibc-relayer       = { git = "https://github.com/informalsystems/hermes.git", rev = "d60057f8" }
+ibc-relayer-types = { git = "https://github.com/informalsystems/hermes.git", rev = "d60057f8" }
+ibc-telemetry     = { git = "https://github.com/informalsystems/hermes.git", rev = "d60057f8" }
