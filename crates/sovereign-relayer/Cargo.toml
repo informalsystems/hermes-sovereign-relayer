@@ -1,0 +1,42 @@
+[package]
+description = "Concrete context implementation for building a Sovereign to Cosmos relayer"
+name        = "hermes-sovereign-relayer"
+readme      = "README.md"
+
+authors      = { workspace = true }
+edition      = { workspace = true }
+keywords     = { workspace = true }
+license      = { workspace = true }
+repository   = { workspace = true }
+rust-version = { workspace = true }
+version      = { workspace = true }
+
+[dependencies]
+cgp-core                            = { workspace = true }
+cgp-error-eyre                      = { workspace = true }
+hermes-celestia-chain               = { workspace = true }
+hermes-cosmos-chain-components      = { workspace = true }
+hermes-cosmos-relayer               = { workspace = true }
+hermes-encoding-components          = { workspace = true }
+hermes-logging-components           = { workspace = true }
+hermes-protobuf-encoding-components = { workspace = true }
+hermes-relayer-components           = { workspace = true }
+hermes-runtime                      = { workspace = true }
+hermes-runtime-components           = { workspace = true }
+hermes-sovereign-chain-components   = { workspace = true }
+hermes-sovereign-rollup-components  = { workspace = true }
+hermes-sovereign-test-components    = { workspace = true }
+hermes-test-components              = { workspace = true }
+hermes-tracing-logging-components   = { workspace = true }
+hermes-wasm-client-components       = { workspace = true }
+
+ibc                 = { workspace = true }
+ibc-proto           = { workspace = true }
+ibc-relayer         = { workspace = true }
+ibc-relayer-types   = { workspace = true }
+sov-celestia-client = { workspace = true }
+
+ed25519-dalek = { workspace = true }
+eyre          = { workspace = true }
+futures       = { workspace = true }
+jsonrpsee     = { workspace = true, features = ["http-client", "ws-client"] }

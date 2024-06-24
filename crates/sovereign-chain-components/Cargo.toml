@@ -1,0 +1,45 @@
+[package]
+
+description = "Context-generic client components for communicating with a Sovereign rollup node"
+name        = "hermes-sovereign-chain-components"
+readme      = "README.md"
+
+authors      = { workspace = true }
+edition      = { workspace = true }
+keywords     = { workspace = true }
+license      = { workspace = true }
+repository   = { workspace = true }
+rust-version = { workspace = true }
+version      = { workspace = true }
+
+[dependencies]
+cgp-core                            = { workspace = true }
+cgp-error-eyre                      = { workspace = true }
+hermes-cosmos-chain-components      = { workspace = true }
+hermes-encoding-components          = { workspace = true }
+hermes-protobuf-encoding-components = { workspace = true }
+hermes-relayer-components           = { workspace = true }
+hermes-runtime                      = { workspace = true }
+hermes-runtime-components           = { workspace = true }
+hermes-sovereign-rollup-components  = { workspace = true }
+hermes-wasm-client-components       = { workspace = true }
+
+ibc               = { workspace = true }
+ibc-proto         = { workspace = true }
+ibc-query         = { workspace = true }
+ibc-relayer       = { workspace = true }
+ibc-relayer-types = { workspace = true }
+
+sov-celestia-client = { workspace = true, features = ["test-util"] }
+
+bech32        = { workspace = true }
+borsh         = { workspace = true }
+ed25519-dalek = { workspace = true }
+eyre          = { workspace = true }
+hex           = { workspace = true }
+jsonrpsee     = { workspace = true, features = ["http-client"] }
+prost         = { workspace = true }
+serde         = { workspace = true }
+serde_json    = { workspace = true }
+sha2          = { workspace = true }
+tonic         = { workspace = true }
