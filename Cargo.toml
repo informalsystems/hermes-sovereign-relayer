@@ -4,10 +4,10 @@ resolver = "2"
 
 members = [
   "crates/sovereign-chain-components",
-  "crates/sovereign-rollup-components",
-  "crates/sovereign-relayer",
-  "crates/sovereign-test-components",
   "crates/sovereign-integration-tests",
+  "crates/sovereign-relayer",
+  "crates/sovereign-rollup-components",
+  "crates/sovereign-test-components",
 ]
 
 [workspace.package]
@@ -44,8 +44,8 @@ hermes-test-components = { version = "0.1.0" }
 hermes-cosmos-chain-components  = { version = "0.1.0" }
 hermes-cosmos-integration-tests = { version = "0.1.0" }
 hermes-cosmos-relayer           = { version = "0.1.0" }
-hermes-cosmos-wasm-relayer      = { version = "0.1.0" }
 hermes-cosmos-test-components   = { version = "0.1.0" }
+hermes-cosmos-wasm-relayer      = { version = "0.1.0" }
 
 hermes-wasm-client-components = { version = "0.1.0" }
 hermes-wasm-test-components   = { version = "0.1.0" }
@@ -119,8 +119,8 @@ hermes-cli-components = { git = "https://github.com/informalsystems/hermes-sdk.g
 hermes-cosmos-chain-components  = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-cosmos-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-cosmos-relayer           = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
-hermes-cosmos-wasm-relayer      = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-cosmos-test-components   = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
+hermes-cosmos-wasm-relayer      = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 
 hermes-celestia-chain             = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }
 hermes-celestia-integration-tests = { git = "https://github.com/informalsystems/hermes-sdk.git", branch = "main" }

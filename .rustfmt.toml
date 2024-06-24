@@ -1,4 +1,4 @@
-max_width = 100
+max_width       = 100
 reorder_imports = true
 
 # nightly only
